@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>PixelLove — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  <style>
+    .hero-bg { background: linear-gradient(180deg,#0b1020 0%, #121827 60%); }
+    .contact-pill { background: rgba(255,255,255,0.06); }
+    .slide-img { object-fit: cover; width:100%; height:100%; }
+    .gallery-grid img { width:100%; height:100%; object-fit:cover; }
+  </style>
+</head>
+<body class="hero-bg text-white font-sans leading-normal">
+
+  <header class="max-w-6xl mx-auto p-6 flex items-center justify-between">
+    <div class="flex items-center gap-3">
+      <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-yellow-300 rounded-sm p-1 shadow-2xl">
+        <div class="w-full h-full bg-black grid grid-cols-2 grid-rows-2">
+          <div class="bg-pink-400"></div><div class="bg-yellow-300"></div><div class="bg-white"></div><div class="bg-black"></div>
+        </div>
+      </div>
+      <div>
+        <h1 class="text-xl font-bold">PixelLove Studios</h1>
+        <p class="text-xs text-white/80">Wedding Photography & Cinematic Video</p>
+      </div>
+    </div>
+    <nav class="hidden md:flex gap-6 text-sm items-center">
+      <a href="#gallery" class="hover:underline">Gallery</a>
+      <a href="#video" class="hover:underline">Video</a>
+      <a href="#contact" class="hover:underline">Contact</a>
+    </nav>
+  </header>
+
+  <main class="max-w-6xl mx-auto px-6">
+    <section class="md:h-[60vh] h-[50vh] rounded-md overflow-hidden shadow-lg">
+      <div class="swiper mySwiper h-full">
+        <div class="swiper-wrapper h-full">
+          <!-- Replace these image paths with your uploaded images inside an "images" folder -->
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/_DSC9511.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/2345.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/7372.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/7859.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/8689.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/8720.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/8751.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/DSC_5199.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/DSC_5223.jpg" alt="" class="slide-img h-full" /></div>
+          <div class="swiper-slide h-full flex items-center justify-center bg-black/30"><img src="images/DSC00197.jpg" alt="" class="slide-img h-full" /></div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </section>
+
+    <section id="gallery" class="mt-10">
+      <h2 class="text-3xl font-bold mb-4">Our Work</h2>
+      <p class="text-white/80 mb-6 max-w-xl">A selection of recent shoots — click any image to open the fullscreen slider.</p>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 gallery-grid">
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/_DSC9511.jpg')"><img src="images/_DSC9511.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/2345.jpg')"><img src="images/2345.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/7372.jpg')"><img src="images/7372.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/7859.jpg')"><img src="images/7859.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/8689.jpg')"><img src="images/8689.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/8720.jpg')"><img src="images/8720.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/8751.jpg')"><img src="images/8751.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/DSC_5199.jpg')"><img src="images/DSC_5199.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/DSC_5223.jpg')"><img src="images/DSC_5223.jpg" alt="" /></div>
+        <div class="h-60 overflow-hidden rounded-md cursor-pointer" onclick="openSlideBySrc('images/DSC00197.jpg')"><img src="images/DSC00197.jpg" alt="" /></div>
+      </div>
+    </section>
+
+    <section id="video" class="mt-12">
+      <h3 class="text-2xl font-semibold mb-3">Video Showcase</h3>
+      <p class="text-white/80 mb-4">You can replace the embedded video below with your YouTube link or an MP4 file.</p>
+      <div class="aspect-video rounded-md overflow-hidden shadow-lg">
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video showcase" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="contact" class="mt-12 mb-20 grid md:grid-cols-2 gap-6 items-center">
+      <div>
+        <h3 class="text-2xl font-bold">Get in touch</h3>
+        <p class="text-white/80 mt-2">Book a shoot or ask for a quote — we'll respond quickly.</p>
+
+        <div class="mt-4 space-y-3">
+          <div class="contact-pill p-4 rounded-md">
+            <div class="text-sm text-white/80">Phone</div>
+            <div class="font-semibold">+91 75868 94118, +91 73188 88060</div>
+          </div>
+          <div class="contact-pill p-4 rounded-md">
+            <div class="text-sm text-white/80">WhatsApp</div>
+            <div class="font-semibold"><a href="https://wa.me/918637036161" target="_blank" class="underline">+91 86370 36161</a></div>
+          </div>
+          <div class="contact-pill p-4 rounded-md">
+            <div class="text-sm text-white/80">Location</div>
+            <div class="font-semibold">Paschim Medinipur</div>
+          </div>
+          <div class="mt-4">
+            <a href="tel:+917586894118" class="inline-block px-4 py-2 bg-pink-500 rounded-md font-semibold">Call Now</a>
+            <a href="https://wa.me/918637036161" target="_blank" class="inline-block ml-3 px-4 py-2 border rounded-md">WhatsApp</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-md bg-white/5">
+        <form onsubmit="alert('Thanks — message not sent (static demo). Please call or WhatsApp us.') ; return false;">
+          <label class="block text-sm mb-1">Your name</label>
+          <input class="w-full p-2 rounded-md mb-3 bg-white/5 border border-white/10" placeholder="Name" required />
+          <label class="block text-sm mb-1">Phone or email</label>
+          <input class="w-full p-2 rounded-md mb-3 bg-white/5 border border-white/10" placeholder="Phone or email" required />
+          <label class="block text-sm mb-1">Message</label>
+          <textarea class="w-full p-2 rounded-md mb-3 bg-white/5 border border-white/10" rows="4" placeholder="Tell us about your event"></textarea>
+          <button class="px-4 py-2 bg-pink-500 rounded-md">Send</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/6 py-6 mt-6">
+    <div class="max-w-6xl mx-auto px-6 text-sm text-white/60 flex justify-between">
+      <div>© 2025 PixelLove Studios</div>
+      <div>Built with ❤️</div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.mySwiper', {
+      loop: true,
+      autoplay: { delay: 3500, disableOnInteraction: false },
+      pagination: { el: '.swiper-pagination', clickable: true },
+      navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
+    });
+
+    function openSlideBySrc(src) {
+      const slides = document.querySelectorAll('.mySwiper .swiper-slide img');
+      let idx = 0;
+      slides.forEach((img, i) => { if (img && img.getAttribute('src') === src) idx = i; });
+      swiper.slideToLoop(idx, 500);
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>

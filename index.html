@@ -1,58 +1,113 @@
-<!-- Save this as index.html and upload anywhere to go live -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pixel Art - Pixel Art Wedding</title>
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pixel Art Weddings</title>
+  <style>
+    body {
+      background-color: #fdf6e3;
+      font-family: 'Courier New', monospace;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #ffb347;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #fff;
+      text-shadow: 2px 2px #000;
+    }
+    header p {
+      font-size: 1.2rem;
+      color: #fff;
+    }
+    nav {
+      background: #d26d6d;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+    .services, .testimonials {
+      background: #ffe5b4;
+      padding: 20px;
+      margin: 20px 0;
+    }
+    .footer {
+      background: #ffb347;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    .pixel-img {
+      width: 100px;
+      height: auto;
+      image-rendering: pixelated;
+      margin: 10px;
+    }
+  </style>
 </head>
-<body class="min-h-screen bg-gradient-to-b from-[#0b1020] via-[#121827] to-[#00121a] text-white font-sans">
-  <header class="max-w-6xl mx-auto px-6 py-6">
-    <nav class="flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-12 h-12 bg-gradient-to-br from-pink-500 to-yellow-300 rounded-sm p-1 shadow-2xl">
-          <div class="w-full h-full bg-black grid grid-cols-2 grid-rows-2 gap-0">
-            <div class="bg-pink-400"></div>
-            <div class="bg-yellow-300"></div>
-            <div class="bg-white"></div>
-            <div class="bg-black"></div>
-          </div>
-        </div>
-        <div>
-          <h1 class="text-xl font-bold leading-none">PixelLove Studios</h1>
-          <p class="text-xs opacity-80">Wedding Photography & Cinematic Video</p>
-        </div>
-      </div>
-      <div class="hidden md:flex items-center gap-6">
-        <a href="#gallery" class="text-sm hover:underline">Gallery</a>
-        <a href="#packages" class="text-sm hover:underline">Packages</a>
-        <a href="#about" class="text-sm hover:underline">About</a>
-        <a href="#contact" class="px-3 py-1 text-sm border-2 rounded-md border-white/20 hover:bg-white/10">Book Now</a>
-      </div>
-    </nav>
+<body>
+  <header>
+    <h1>📸 Pixel Art Weddings</h1>
+    <p>"Your Big Day. Pixel Perfect."</p>
   </header>
 
-  <section class="max-w-6xl mx-auto px-6 pt-4 pb-12 flex flex-col md:flex-row items-center gap-8">
-    <div class="flex-1">
-      <div class="inline-block px-3 py-1 mb-4 bg-white/10 rounded-sm border border-white/10 text-sm font-medium tracking-wide">PIXEL ART WEDDINGS</div>
-      <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Memories in <span class="text-pink-400">Retro</span> Pixels — Cinematic Storytelling</h2>
-      <p class="mt-4 max-w-xl text-white/80">We turn your wedding moments into charming pixel-art visuals and cinematic films. Perfect for couples who love a playful, nostalgic aesthetic.</p>
-      <div class="mt-6 flex gap-4">
-        <a href="#contact" class="px-5 py-3 bg-pink-500 rounded-md font-semibold shadow-sm hover:brightness-105">Book a Shoot</a>
-        <a href="#gallery" class="px-5 py-3 border rounded-md border-white/20 hover:bg-white/5">See Gallery</a>
-      </div>
-    </div>
-    <div class="flex-1 flex justify-center">
-      <img src="https://i.ibb.co/1qgW0p7/pixel-wedding-sample.png" alt="Pixel Art Wedding" class="w-full max-w-md rounded-lg shadow-lg border border-white/10" />
-    </div>
+  <nav>
+    <a href="#services">Services</a>
+    <a href="#portfolio">Portfolio</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="services" class="services">
+    <h2>🎬 Our Services</h2>
+    <p>We capture your wedding in stunning cinematic style using:</p>
+    <ul style="list-style: none; padding-left: 0;">
+      <li>📷 Candid & Traditional Photography</li>
+      <li>🎥 Cinematic Video Shoots</li>
+      <li>🚁 Drone & Slow Motion Shots</li>
+      <li>💍 Pre-Wedding / Save the Date</li>
+    </ul>
   </section>
 
-  <footer class="border-t border-white/6 mt-12 py-6">
-    <div class="max-w-6xl mx-auto px-6 flex items-center justify-between">
-      <div class="text-sm">© 2025 PixelLove Studios — All rights reserved</div>
-      <div class="text-sm text-white/60">Built with ❤️ — Pixel art friendly</div>
-    </div>
-  </footer>
+  <section id="portfolio">
+    <h2>🖼️ Portfolio</h2>
+    <p>Here are a few magical moments we've captured:</p>
+    <img src="https://i.imgur.com/0LZ5m0O.png" alt="Pixel Couple" class="pixel-img">
+    <img src="https://i.imgur.com/CsHg7Fo.png" alt="Pixel Bride" class="pixel-img">
+    <img src="https://i.imgur.com/lWy9pTy.png" alt="Pixel Mandap" class="pixel-img">
+  </section>
+
+  <section id="testimonials" class="testimonials">
+    <h2>💬 Client Testimonials</h2>
+    <p>"ওদের করা ভিডিওটা আজও দেখে কাঁদি। যেভাবে আমার বাবার মুখের এক্সপ্রেশন ধরে রেখেছিলো—ভুলবো না।"</p>
+    <p><em>— Priya & Rohit, Kolkata Wedding</em></p>
+  </section>
+
+  <section id="contact">
+    <h2>📩 Contact Us</h2>
+    <p>📱 WhatsApp: +91XXXXXXXXXX</p>
+    <p>📧 Email: pixelart@weddings.com</p>
+    <p>📍 Location: Kolkata | Available Pan India</p>
+  </section>
+
+  <div class="footer">
+    © 2025 Pixel Art Weddings | Designed in Pixel Style 🎨
+  </div>
 </body>
 </html>
